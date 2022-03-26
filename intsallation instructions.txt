@@ -1,0 +1,8 @@
+download mysql on your machine
+download from url:	https://dev.mysql.com/downloads/windows/installer/5.7.html
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ytYYT*-_-*7yyV$505';
+
+
+INSERT INTO `stores_nav_db`.`store` (`id`, `name`, `logo`, `slug`, `cuisines`, `work_start_at`, `work_end_at`, `lat`, `lng`) VALUES ('1', 'Hadramoot  Elhalaby', 'https://images.deliveryhero.io/image/talabat/restaurants/New_Project_-_2021-0_637520890536095796.jpg?width=115&height=104', 'hadramoot-elhalaby-10th-of-ramadan--6th-district', 'Grills', '6:00:00', '0:00:00', '30.01309179', '31.21530159');
+
