@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Nav.Application.Handlers
 {
-  public  class GetStoresListByUserLocationHandler : IRequestHandler<GetStoresListByUserLocationQuery, IEnumerable<StoreResponse>>
+    public  class GetStoresListByUserLocationHandler : IRequestHandler<GetStoresListByUserLocationQuery, IEnumerable<StoreResponse>>
     {
         private readonly IStoreRepository _storeRepository;
 

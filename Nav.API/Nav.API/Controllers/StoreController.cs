@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Nav.Application.Queries;
+using Nav.Application.Responses;
 using Nav.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,14 @@ namespace Nav.API.Controllers
             var query = new GetStoresListByUserLocationQuery(location);
             var storesList =await _mediatR.Send(query);
             return Ok(storesList);
+        }
+        [HttpGet("GetItemsListByStoreId/{storeId}")]
+        [ProducesResponseType(typeof(IEnumerable<Store>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<StoreDTOResponse>> GetItemsListByStoreId(int storeId)
+        {
+            var query = new GetItemsListByStoreIdQuery(storeId);
+            var store = await _mediatR.Send(query);
+            return Ok(store);
         }
     }
 }

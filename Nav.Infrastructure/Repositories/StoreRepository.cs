@@ -18,6 +18,11 @@ namespace Ordering.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
+        public async Task<Store> GetItemsListByStoreId(int storeId)
+        {
+            return await _dbContext.Stores.Include(store => store.StoreDetails).FirstOrDefaultAsync(store => store.Id == storeId);
+        }
+
         public async Task<IEnumerable<Store>> GetStoresByUserLocation(Location  location)
         {
            // var createdPath =  .Paths.FromSqlRaw("AddNodeWithPathProc  {0}, {1}", nodeTitle, parentPathString).ToList();

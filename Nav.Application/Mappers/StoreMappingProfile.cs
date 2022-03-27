@@ -12,6 +12,8 @@ namespace Nav.Application.Mappers
         public StoreMappingProfile()
         {
             CreateMap<Store, StoreResponse>().ReverseMap();
+            CreateMap<StoreDetail, StoreDetailDTO>().ReverseMap();
+            CreateMap<Store, StoreDTOResponse>().ReverseMap();
         }
     }
 }

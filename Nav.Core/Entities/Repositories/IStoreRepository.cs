@@ -7,5 +7,6 @@ namespace Nav.Core.Entities.Repositories
    public interface IStoreRepository: IRepository<Store>
     {
         Task<IEnumerable<Store>> GetStoresByUserLocation(Location  location);
+        Task<Store> GetItemsListByStoreId(int storeId);
     }
 }

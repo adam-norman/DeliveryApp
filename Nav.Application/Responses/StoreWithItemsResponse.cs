@@ -1,11 +1,10 @@
-﻿using System;
-using System.Text;
+﻿using Nav.Core.Entities;
+using System.Collections.Generic;
 
 namespace Nav.Application.Responses
 {
-    public class StoreResponse
+    public class StoreDTOResponse
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Logo { get; set; }
         public string Slug { get; set; }
@@ -14,5 +13,6 @@ namespace Nav.Application.Responses
         public string EndWorkAt { get; set; }
         public decimal Lat { get; set; }
         public decimal Lng { get; set; }
+        public List<StoreDetailDTO>  StoreDetails { get; set; }
     }
 }
