@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nav.Application", "Nav.Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nav.API", "Nav.API", "{D82234BF-F2EA-49E9-9C44-A41ACA5E8163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav.Core", "Nav.Core\Nav.Core.csproj", "{7ED0B27C-4D34-4A53-AD30-8DC6A0F3A5AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nav.Core", "Nav.Core\Nav.Core.csproj", "{7ED0B27C-4D34-4A53-AD30-8DC6A0F3A5AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav.Infrastructure", "Nav.Infrastructure\Nav.Infrastructure.csproj", "{3D8A45A9-1462-4203-8ECE-FD11951D0406}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nav.Infrastructure", "Nav.Infrastructure\Nav.Infrastructure.csproj", "{3D8A45A9-1462-4203-8ECE-FD11951D0406}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav.API", "Nav.API\Nav.API\Nav.API.csproj", "{F9E25380-C07F-474E-8B34-1CC2F24668B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nav.API", "Nav.API\Nav.API\Nav.API.csproj", "{F9E25380-C07F-474E-8B34-1CC2F24668B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav.Application", "Nav.Application\Nav.Application.csproj", "{876E113C-7580-4D90-8F13-D6473DA483A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nav.Application", "Nav.Application\Nav.Application.csproj", "{876E113C-7580-4D90-8F13-D6473DA483A6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{753E7C50-103B-4BB0-AA2B-E5B1B824D7E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{876E113C-7580-4D90-8F13-D6473DA483A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876E113C-7580-4D90-8F13-D6473DA483A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876E113C-7580-4D90-8F13-D6473DA483A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753E7C50-103B-4BB0-AA2B-E5B1B824D7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753E7C50-103B-4BB0-AA2B-E5B1B824D7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753E7C50-103B-4BB0-AA2B-E5B1B824D7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753E7C50-103B-4BB0-AA2B-E5B1B824D7E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
