@@ -1,7 +1,16 @@
 version: '3.4'
 
 services:
+    navdb:
+        image: mahmoudmnasr/mssqlserver-navdb:test
+
+    frontapp:
+        image: frontapp
+        ports:
+            - "8081:80"
+
     nav.api:
+        restart: on-failure
         image: ${DOCKER_REGISTRY-}navapi
         build:
             context: .

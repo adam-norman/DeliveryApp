@@ -1,8 +1,21 @@
 version: '3.4'
 
 services:
-  nav.api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+    navdb:
+        container_name: navdb
+        ports: 
+            - "1433:1433"
+        environment:
+                SA_PASSWORD: "P!SW0rd123"
+                ACCEPT_EULA: "Y"
+
+    nav.api:
+        restart: on-failure
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - "ConnectionStrings:NavDb=Server=navdb;Database=NavDb;User Id=sa;Password=P!SW0rd123;"
+        build:
+            context: .
+            dockerfile: Nav.API/Nav.API/Dockerfile
+        ports:
+            - "5001:80"
